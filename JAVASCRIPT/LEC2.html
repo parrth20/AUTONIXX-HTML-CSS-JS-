@@ -1,0 +1,84 @@
+update exisiting content of a file 4 ways --
+1 - innerhtml
+2 - outerhtml
+3rd - textcontent
+4th - innertext
+
+1st 
+inner html k 2 kaam hai pehla -- gets an element or return all decendents (means us elemts k niche jitni nodes aati hai woh) dusra -- set content of html elemnts
+ 
+2nd - outerhtml very rarely used property do mdn if dont know
+majorly for outer element conetnt this is 
+
+with 3rd and 4th we can get and set textual properties
+3rd- textconetnt
+4th-innertext
+
+eg.let say we have a class content 
+document.queryselector('.content');
+content.innerHTML then it will give content of which is written inside 
+if we write content.textcontent then also same outout will come their is a very basic diffrence between thin
+ inner html wala text ko me koi tag hoega usko bhi render krega baki textcontent wali property usko bhi as a text treat krke print krwa degi .
+ eg- <div class="content">hello<b>world</b></div>
+ text content bold bhi print hojayega baki inner html me world bold me likha ayega
+
+
+
+ adding new elemnt using javascript 
+ we have a method for this createelemnt();
+ eg : - let newchild = document.createelemnt('span');
+
+ for adding this to conetnt class we will do 
+ content.appendchild(newchild);
+ ye at the end jakar add hojayega 
+ 
+
+ ways to create a text node : --
+ 2 ways are there : - 
+ 1st - bewakoof tarika 
+ eg : --
+ let newpara = document.createelement('p');
+ let textpara = document.createtextnode('I am the text');
+ newpara = appendchild(textpara) ; //this is how we added text to that newly added paragraph
+ content.appendchild(newpara);
+
+
+ 2nd : - easy and asan and fast tarika 
+
+let mypara = document.createelement('p');
+mypara.textcontent = 'i am the text';
+contnent.appendchild(mypara);
+
+but there is one problem isse humesha last sibling banega for this we have a tag 
+insertadjecenthtml() - has to called with 2 arguments 
+location/postion basicallly this is where
+html or text content which you want to add and basically this is what 
+
+location 
+1 beforebegin just start before content elemnt 
+afterbegin just after content elemnt
+beforeend ending tag se pehle
+afterend end hone just bad
+
+
+eg : - let content  = $0 ; 
+this is done after selectiing a varribleb jisko select krte hai vo class $0 k vajah se use kr skte hai bina class ka name likhe
+
+for doing this first createhtml tag
+using let newtext = document.createelement('h3');
+newtext.textcontent = 'abcd';
+content.instertadjectelement('beforeBegin' , newtext);
+beforebegin ki jagah aaapn position change karke bhi daaal skte hai
+
+
+simillarly we can delete a element using removechild 
+ atleast to use this we should know what is the parent child for which we are removing ; 
+
+beacuse iits sysntax is like that parent.removechild (childelementc )
+
+
+
+
+
+
+   
