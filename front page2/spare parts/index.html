@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spare Parts</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <!--side Navigation Bar-->
+    <div id="sidenav">
+      <div style="width: 100%;display: flex; justify-content: space-between ; ">
+          <div style="position: relative; width: 100%; padding: 10px; font-size: 20px;" >MENU</div>
+          <div id="cross" style="position: relative; width: 100%; text-align: right; padding: 10px; transition: 0.5s;" onclick="closeSesame()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg></div><br>
+      </div>
+      <br>
+      <div class="menucont" style="padding: 30px;">
+        <a href="../index.html">Home</a><br>
+        <a href="../index.html">Services</a><br>
+        <a href="../contact us/index.html">Contact Us</a><br>
+        <a href="../about us/index.html" >About Us</a><br>
+        <a href="../other1/customerSupport.html" >Customer Support</a><br>
+        <a href="../Tnc/TERMS_CONDITIONS.HTML" >Terms and Conditions</a><br>
+        <a href="../other1/return&refund.html">Return and Refund Policy</a>
+      </div>
+  </div>
+
+    <!--Header-->
+    <header id="head" style="display: flex; justify-content: space-between; align-items: baseline; z-index: 1;">
+      <div id="menu" onclick="openSesame()" style="transition: 0.5s;"><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 15 15">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg></span><span> MENU</span></div>
+      <div style="display: flex; justify-content: space-evenly;">
+          <span class="search" onclick="search()" style="padding-right:10px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></span>
+          <span class="cart" style="padding-left: 10px; padding-right: 10px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+            </svg></span>
+          <span class="contact" style="padding-left: 10px;"><a href=""><button style="padding:5px;background-color: yellowgreen; border:1px solid black;border-radius: 5px;" id="signInBtnHeader">Sign In</button></a></span>
+      </div>
+  </header>
+
+
+
+    <div class="title">
+      <h1 class="title-shop">AUTONIX</h1>
+      <img src="essentials/img/Autonix-logo.png" class="logo">
+    </div>
+
+    <article class="banner">
+      <div class="card__img">
+        <img src="essentials/img/1.webp">
+      </div>
+      <div class="card__name">
+        <p>Spare Parts at best price</p>
+      </div>
+      <div class="card__content">
+
+        <div class="card__text">
+          <div>
+            <span class="card__cont card__cont--now">Explore the world of Autoparts.</span>
+          </div>
+        </div>
+        <p>AUTONIX</p>
+      </div>
+    </article>
+
+    
+    <div class="trending">
+      <h2>Trending parts offer</h2>
+    </div>
+    <main class="main bd-grid">
+      <article class="card">
+        <div class="card__img">
+          <img src="essentials/img/1.jpg">
+        </div>
+        <div class="card__name">
+          <p>Alloy Wheels</p>
+        </div>
+        <div class="card__content">
+          
+          <div>
+            <span class="card__cont card__cont--before"><del>Rs. 6000</del></span>
+            <span class="card__cont card__cont--now">Starting @Rs.4000</span>
+          </div>
+         
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img">
+          <img src="essentials/img/2.jpg">
+        </div>
+        <div class="card__name">
+          <p>Disc Brakes</p>
+        </div>
+        <div class="card__content">
+          <div>
+            <span class="card__cont card__cont--before"><del>Rs. 4000</del></span>
+            <span class="card_cont card__cont--now">Starting @Rs.2500</span>
+          </div>
+         
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__img">
+          <img src="essentials/img/4.jpg">
+        </div>
+        <div class="card__name">
+          <p>Headlights</p>
+        </div>
+        <div class="card__content">
+          <div>
+            <span class="card__cont card__cont--before"><del>Rs. 4000</del></span>
+            <span class="card__cont card__cont--now">Starting @3000</span>
+          </div>
+        </div>
+      </article>
+      
+    </main>
+    <main>
+
+      <div class="companyHead"><h2>Shop By Brands</h2></div>
+      <div class="ShopByCompany">
+        
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/hyundai-logo-d17c.jpg" alt="">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/mahindra-mahindra-logo-21b3.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/toyota-logo-b9dd.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/tata-logo-ca08.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/honda-logo-8791.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/ford-logo-a55e.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/renault-logo-e98f.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/kia-logo-d6ca.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/volkswagen-logo-71db.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/nissan-logo-54b5.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/skoda-logo-7c3c.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/23/l2AZQYjw/audi-logo-bd83.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/24/JLzfMntl/bmw-logo-3064.jpg">
+        </div>
+        <div class="card2">
+          <img src="https://img.indianauto.com/2020/07/24/JLzfMntl/mercedes-benz-cars-logo-660c.jpg">
+        </div>
+        
+        
+
+      </div>
+    </main>
+
+
+    <!--FOOTER-->
+    <footer>
+      <div class="others">
+        <p>
+        <h2>Connect with Us:</p>
+        </h2>
+        <div class="icons">
+            
+            <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+                <img class="footer-img" src="essentials/img/insta-logo.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://www.twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+                <img class="footer-img" src="essentials/img/twitter2-logo.webp" alt="Twitter" width="30">
+            </a>
+            <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                <img class="footer-img"
+                    src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png"
+                    alt="Facebook" width="30">
+            </a>
+            <a href="https://www.youtube.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                <img class="footer-img" src="essentials/img/youtube-logo.png" alt="Youtube" width="30">
+            </a>
+        </div>
+        <div class="address">
+            <p>Visit our website and explore the latest in automobile parts technology.</p>
+        </div>
+    </div>
+    <div class="footer1">
+        <p class="footpara">Copyright &copy; Autonix ltd. All Rights Reserved | Gmail: autonix@gmail.com</p>
+        <br>
+    </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

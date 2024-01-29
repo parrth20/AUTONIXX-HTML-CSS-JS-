@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* racing-sans-one-latin-400-normal */
+@font-face {
+    font-family: 'RS';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/racing-sans-one@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/racing-sans-one@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+    font-family: CG;
+    src: url(https://fonts.cdnfonts.com/css/coco-gothic);
+}
+
+body{
+    font-family: CG;
+}
+
+#auto{
+    font-family: RS;
+    font-size: 45px;
+}
+.about-area{
+    padding-top: 5%;
+}
+.about-img{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.about-img:before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 9px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height:100%;
+}
+
+.about-text{
+    padding-top: 0%;
+    float: right;
+}
+.about-text h2{
+    color: #9ECA2E;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top:0px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.waviy{
+    position: relative;
+  }
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color:  #9ECA2E;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+.image-{
+    width:100px;
+    height:150px;
+    transform: rotate(90deg);
+}
+.about-text p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.about-text a{
+    background: #b5a7f8;
+    color: #fff;
+    padding: 7px 15px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+body {
+    background-color: black !important;
+}
+.about-area{
+    padding-top: 5%;
+}
+.about-img{
+    position: relative;
+}
+.about-img:before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 9px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-area{
+    padding-top: 2%;
+    font-family: CG;
+
+}
+.about-img{
+    position: relative;
+}
+.about-img:before{
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: 30px;
+    border: 9px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.waviy {
+    position: relative;
+    text-align: center;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #9ECA2E;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+header{
+    background-color: black;
+    animation-name: appear;
+    animation-duration: 6s;
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin: 0px;
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+    font-family: CG;
+}
+
+#sidenav{
+    position: absolute; line-height: 50px; background-color: #000; color: #fff; height: 100%; 
+    z-index: 2;
+    font-family: CG;
+    padding: 40px;
+    padding-bottom: 30px;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.6s;
+    left: 0;
+    visibility: hidden;
+}
+
+#sidenav.visible{
+    width: fit-content;
+    visibility: inherit;
+}
+
+#sidenav a:hover{
+    color: #9ECA2E;
+    transition: 0.5s;
+}
+#sidenav a{
+    color: #9ECA2E;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#cross:hover{
+    color: white;
+}
+#menu{
+    transition: 0.5s;
+}
+#menu:hover{
+    color: white;
+}
+header{
+            background-color: black;
+            animation-name: appear;
+            animation-duration: 6s;
+            color: white;
+            width: 100%;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin: 0px;
+            opacity: 1;
+            position: sticky;
+            top: 0;
+            transition: 0.3s;
+            font-family: CG;
+            font-size:20px;
+        }
+
+#sidenav{
+            position: absolute; line-height: 50px; background-color: #000; color: #9ECA2E; height: 100%; 
+            z-index: 2;
+            font-family: CG;
+            padding: 40px;
+            padding-bottom: 30px;
+            width: 0;
+            overflow-x: hidden;
+            transition: width 0.6s;
+            left: 0;
+            visibility: hidden;
+            font-size:20px;
+        }
+
+        #sidenav.visible{
+            width: fit-content;
+            visibility: inherit;
+        }
+
+        #sidenav a:hover{
+            color: #9ECA2E;
+            transition: 0.5s;
+        }
+        #sidenav a{
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        #cross:hover{
+            color: #9ECA2E;
+        }
+        #menu{
+            transition: 0.5s;
+            font-size: 20px;
+        }
+        #menu:hover{
+            color: #9ECA2E;
+        }
+
+        footer {
+            background-color: #0a0a0a; /* Almost black background */
+            padding: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+
+        .one {
+            color: #9ECA2E; /* Green heading color */
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .two {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color:#fff;
+        }
+
+        .quick-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .quick-links a:hover {
+            color: #9ECA2E; /* Green color on hover */
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .social-icons a:hover {
+            color: #9ECA2E; /* Green color on hover */
+        }
+
+        .address {
+            color: #888;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        /* Classy Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+            animation-delay: 0.5s; /* Delay the animation */
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            justify-content: space-around;
+        }
+
+    
+        .others {
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+            animation-delay: 0.5s; 
+        }
+    
+        /* Add more styling as needed */
+
+        @media screen and (max-width: 600px) {
+            /* Add responsive styles for smaller screens */
+            body {
+                margin: auto;
+            }
+            .animated {
+                opacity: 0;
+                animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+                animation-delay: 0.5s; /* Delay the animation */
+                display: block;
+            }
+
+            .footer-section quick-links{
+                margin-bottom: 15px;
+                margin-left: 50px;
+                margin-right: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+       
+

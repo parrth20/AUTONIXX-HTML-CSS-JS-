@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+.con{
+  font-size: 70px;
+  padding-left: 300px;
+  font-weight: 800;
+  color:rgb(185, 238, 79);
+}
+.con :hover{
+  background: rgb(185, 238, 79);
+  border: 1px solid rgb(185, 238, 79);
+  transform: translate(-6px,-6px);
+}
+body{
+  background-color: #2a2a2c;
+  text-align: center;
+}
+header{
+  background-color: black;
+  animation-name: appear;
+  animation-duration: 6s;
+  color: white;
+  width: 98%;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin: 0px;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  transition: 0.3s;
+  font-family: CG;
+}
+
+#sidenav{
+  position: absolute;
+  line-height: 50px; background-color: #000; color: #fff; height: 100%; 
+  z-index: 2;
+  font-family: CG;
+  padding: 40px;
+  padding-bottom: 30px;
+  width: 0;
+  overflow-x: hidden;
+  transition: width 0.6s;
+  left: 0;
+  visibility: hidden;
+}
+
+#autonix-logo{
+  letter-spacing: 10px; 
+  color: rgb(185, 238, 79); 
+  font-size: xx-large;
+  transition: all 1s ease-in-out .3s;
+}
+#autonix-logo:hover{
+  letter-spacing: 40px;
+  /* font-size: 40px; */
+}
+
+#sidenav.visible{
+  width: fit-content;
+  visibility: inherit;
+}
+@media (max-width: 721px) {
+  #autonix-logo{
+      display: none;
+  }
+}
+
+#sidenav a:hover{
+  color: #9ECA2E;
+  transition: 0.5s;
+}
+#sidenav a{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#cross:hover{
+  color: #9ECA2E;
+}
+#menu{
+  transition: 0.5s;
+}
+#menu:hover{
+  color: #9ECA2E;
+}
+
+.about1{
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    background-color: #2a2a2c;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+    padding-left: 1vw;
+    border-left: 0.3rem solid #308d46;
+}
+.about1:hover{
+  transition: transform .2s ease;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    border: 1.5px solid rgb(185, 238, 79);
+    border-radius: 1em;
+}
+.about2{
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  color: white;
+  text-align: center;
+  background-color: #2a2a2c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 1rem;
+  border-left: 0.3rem solid #308d46;
+  padding-bottom: 2rem;
+}
+
+.about2 h2{
+  font-family: 'Poppins',sans-serif;
+  color: rgb(185, 238, 79);
+  font-size: 40px;
+}
+
+.about2 p{
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about2:hover{
+  transition: transform .2s ease;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+}
+
+.team{
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  margin-top: 3rem;
+  font-size: 50px;
+}
+.flexbox1{
+  margin-top: -50px;
+}
+.flexbox1 h2{
+  font-family:'Poppins',sans-serif;
+  font-size: 23px;
+}
+@media(min-width: 768px) {
+  .container-1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      -ms-flex-align: center;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      margin-top: 10vh;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      height: 55vh;
+      background-color: #2a2a2c;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+}
+
+.flexbox1 {
+  padding-top: 0.4vh;
+  padding-left: 0vh;
+  padding-right: 0vh;
+  background: linear-gradient(to right, #4B0082, #00008B);
+  
+  color: rgb(253, 251, 251);
+  font-size: 1.2vw;
+  border-radius: 0.6rem;
+  height: 55vh;
+  line-height-step: 1vh;
+  width: 20vw;
+  transition: .3s ease;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.flexbox1:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#pic{
+  width: 19.5vw;
+  height: 35.85vh;
+  border-radius: 0.5rem;
+}
+
+.footer1 {
+  background-color: rgb(55, 60, 45);
+  color: white;
+  height: 10vh;
+  margin: 0px;
+  line-height: 5vh;
+  text-align: center;
+}
+.head{
+  border-radius: 0.5rem;
+  font-size: 100px;
+  margin: auto;
+  transition: all 0.5s;
+  color :  rgb(185, 238, 79);
+  display: flex;
+  justify-content: center;
+
+}
+.footer1 p{
+  padding-top: 15px;
+  font-size: 15px;
+}
+.button {
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, rgb(82, 238, 79), rgb(45, 183, 96)) ;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1vw;
+  padding: 1vh;
+  width: 55%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5%;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 1.5rem;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .con {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  nav ul li {
+    padding: 7px 12px;
+    margin: 10px 8px;
+  }
+
+  .about1 {
+    font-size: 16px;
+    padding-left: 0.5rem;
+  }
+
+  .about2 p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .flexbox1 {
+    width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  #pic {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer1 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .head {
+    font-size: 40px;
+  }
+
+  .button {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+}
+
+.cr {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 30px #000;
+  overflow: hidden;
+  border-radius: 20px;
+  background:url('head\ ofautonix.jpeg');
+  background-size: 100% 100%;
+}
+
+.one,
+.two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 1.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.one {
+  background:  rgb(185, 238, 79);
+  right: -100%;
+}
+
+.two {
+  background: #ddd;
+  right: -200%;
+}
+
+.one h1,
+.one h2 {
+  color: #fff;
+}
+
+.cr:hover .one {
+  right: 0;
+}
+
+.cr:hover .two {
+  right: 100%;
+}
+
+footer{
+  background-color:#2d2e32;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}

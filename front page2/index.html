@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autonix</title>
+</head>
+
+<body>
+    <div id="sidenav">
+        <div style="width: 100%;display: flex; justify-content: space-between ; ">
+            <div style="position: relative; width: 100%; padding: 10px; font-size: 20px;">MENU</div>
+            <div id="cross" style="position: relative; width: 100%; text-align: right; padding: 10px; transition: 0.5s;"
+                onclick="closeSesame()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg></div><br>
+        </div>
+        <br>
+        <div class="menucont" style="padding: 30px;">
+            <a href="#">Home</a><br>
+            <a href="#serv">Services</a><br>
+            <a href="#" onclick="navigateToContactUs()">Contact Us</a><br>
+            <a href="#" onclick="navigateToAboutUs()">About Us</a><br>
+            <a href="#" onclick="navigateToCustomerSupport()">Customer Support</a><br>
+            <a href="#" onclick="navigateToTermsAndCondition()">Terms and Conditions</a><br>
+            <a href="#" onclick="navigateToReturnAndRefund()">Return and Refund Policy</a>
+        </div>
+    </div>
+       <header id="head" style="display: flex; justify-content: space-between; align-items: baseline; z-index: 1;">
+        <div id="menu" onclick="openSesame()" style="transition: 0.5s;"><span><svg xmlns="http://www.w3.org/2000/svg"
+                    width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 15 15">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></span><span> MENU</span></div>
+        <div id="autonix-logo">AUTONIX</div>
+        <div style="display: flex; justify-content: space-evenly;">
+            <span class="search" onclick="search()" style="padding-right:10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></span>
+            <span class="cart" style="padding-left: 10px; padding-right: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg></span>
+            <span class="contact" style="padding-left: 10px;"><a href="#" onclick="navigateToLogIn()"><button style="padding:5px;background-color: yellowgreen; border:1px solid black;border-radius: 5px;" id="signInBtnHeader">Sign In</button></a></span>
+        </div>
+    </header>
+
+
+    <!-- section part goes here -->
+    <section id="content-body">
+        <div class="body-part-1">
+            <div class="body-title">
+                <h1>Welcome To Autonix</h1>
+                <p style="font-size: medium;">The one-stop-shop for all your automobile needs, offering spare<br> parts of all brands, accessories,
+                    maintenance services and the experts in the field.</p>
+            </div>
+
+        </div>
+        <div class="body-part-2">
+            <div class="mechanic-guy-animation-class">
+                <div class="mechanic-guy"></div>
+                <div class="circle">
+                    <span style="--i:1;"><img src="assets/sub_part1.jpg" height="100px"></span>
+                    <span style="--i:2;"><img src="assets/sub_part2.jpeg" height="100px"></span>
+                    <span style="--i:3;"><img src="assets/sub_part3.jpg" height="100px"></span>
+                    <span style="--i:4;"><img src="assets/sub_part5.jpg" height="100px"></span>
+                    <span style="--i:5;"><img src="assets/sub_part6.jpg" height="100px"></span>
+                    <span style="--i:6;"><img src="assets/sub_part7.jpg" height="100px"></span>
+                    <span style="--i:7;"><img src="assets/sub_part1.jpg" height="100px"></span>
+                    <span style="--i:8;"><img src="assets/sub_part2.jpeg" height="100px"></span>
+                    <span style="--i:9;"><img src="assets/sub_part3.jpg" height="100px"></span>
+                    <span style="--i:10;"><img src="assets/sub_part5.jpg" height="100px"></span>
+                    <span style="--i:11;"><img src="assets/sub_part6.jpg" height="100px"></span>
+                    <span style="--i:12;"><img src="assets/sub_part7.jpg" height="100px"></span>
+                    <span style="--i:13;"><img src="assets/sub_part5.jpg" height="100px"></span>
+                    <span style="--i:14;"><img src="assets/sub_part6.jpg" height="100px"></span>
+                    <span style="--i:15;"><img src="assets/sub_part7.jpg" height="100px"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section part not to hide -->
+    <div class="body-title-outside-section">
+        <h1>Welcome To Autonix</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam voluptates aut tempora sequi
+            tenetur obcaecati facilis dolorem, vel quas adipisci!</p>
+    </div>
+    <!-- section part done -->
+
+    <!-- Services SEction -->
+    <div class="services-part" id="serv">
+        <h1>Services</h1>
+        <div class="services-container">
+            <div class="services-container-box" id="services-container-box1" onclick="navigateToSpareParts()">
+                <h3><a href="#" style="text-decoration: none; color: white ;">Spare Parts</a></h3>
+            </div>
+            <div class="services-container-box" id="services-container-box2" onclick="navigateToMaintainance()">
+                <h3><a href="#" style="text-decoration: none; color: white ;">Maintenance Services</a></h3>
+            </div>
+            <div class="services-container-box" id="services-container-box3" onclick="navigateToMechanics()">
+                <h3><a href="#" style="text-decoration: none; color: white ;">Mechanics</a></h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br><br><br>
+    <!-- sevices section done -->
+
+    <!-- footer goes here -->
+    <footer>
+        <div class="animated">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are your trusted source for high-quality automobile parts.<br>
+                    Our commitment is to provide top-notch products to <br> enhance
+                    your vehicle's performance and style.</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Address: 1234 Auto Lane, Cityville, State, 12345</p>
+                <p>Phone: 9667899621 <br> 9825470173 <br> 9018394567</p>
+                <p>Email:autonix@autohub.com <br> info@autoparts.com <br> support@autonixautomotive.com</p>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="others">
+            <p>
+            <h2>Connect with Us:</p>
+            </h2>
+            <div class="icons">
+                <!-- Add your social media icons and links here -->
+                <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="insta-logo.png" alt="Instagram" width="30">
+                </a>
+                <a href="https://www.twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="twitter2-logo.webp" alt="Twitter" width="30">
+                </a>
+                <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img"
+                        src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png"
+                        alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="youtube-logo.png" alt="Youtube" width="30">
+                </a>
+            </div>
+            <div class="address">
+                <p>Visit our website and explore the latest in automobile parts technology.</p>
+            </div>
+        </div>
+        <div class="footer1">
+            <p class="footpara">Copyright &copy; Autonix ltd. All Rights Reserved | Gmail: autonix@gmail.com</p>
+            <br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

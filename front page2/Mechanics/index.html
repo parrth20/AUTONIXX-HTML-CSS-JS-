@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTONIXXX MECHANIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- this is header code -->
+    <div class="wrapper">
+        
+        <div id="sidenav">
+          <div style="width: 100%;display: flex; justify-content: space-between ; ">
+              <div style="position: relative; width: 100%; padding: 10px; font-size: 20px;">MENU</div>
+              <div id="cross" style="position: relative; width: 100%; text-align: right; padding: 10px; transition: 0.5s;"
+                  onclick="closeSesame()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                      <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                  </svg></div><br>
+          </div>
+          <br>
+          <div class="menucont" style="padding: 30px;">
+            <a href="../index.html">Home</a><br>
+            <a href="../index.html">Services</a><br>
+            <a href="../contact us/index.html">Contact Us</a><br>
+            <a href="../about us/index.html" >About Us</a><br>
+            <a href="../other1/customerSupport.html" >Customer Support</a><br>
+            <a href="../Tnc/TERMS_CONDITIONS.HTML" >Terms and Conditions</a><br>
+            <a href="../other1/return&refund.html">Return and Refund Policy</a>
+          </div>
+      </div>
+      <header id="head" style="display: flex; justify-content: space-between; align-items: baseline; z-index: 1;">
+          <div id="menu" onclick="openSesame()" style="transition: 0.5s;"><span><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 15 15">
+                      <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                  </svg></span><span> MENU</span></div>
+          <div id="autonix-logo">AUTONIX</div>
+          <div style="display: flex; justify-content: space-evenly;">
+              <span class="search" onclick="search()" style="padding-right:10px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                      viewBox="0 0 16 16">
+                      <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg></span>
+              <span class="cart" style="padding-left: 10px; padding-right: 10px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                      viewBox="0 0 16 16">
+                      <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                  </svg></span>
+              <span class="contact" style="padding-left: 10px;"><a href=""><button style="padding:5px;background-color: yellowgreen; border:1px solid black;border-radius: 5px;" id="signInBtnHeader">Sign In</button></a></span>
+          </div>
+      </header>
+      <!-- main code starts from here -->
+      <!-- this is one by one making 7 div's nested div's with content of fliped thing included in this -->
+        <h1 class="head"> MECHANICS </h1>
+        <div class="cols">
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img.png)">
+                  <div class="inner">
+                    <p> Auto Repair  </p>
+                    <span>Mr.Randeep Kumar</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Randeep Kumar <br>Experience: 5years <br> charges: For Full Maintanice - ₹1500 (base price) <br>rest according to condition of vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert1" class="button1"> Book Now </button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image :url(img6.png)">
+                  <div class="inner">
+                    <p>Car Repair </p>
+                    <span>Mr. Bhupender Jogi</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr. Bhupendra Jogi<br>Experience: 10years <br> charges: For Full Maintanice - ₹2500 (base price) <br>rest according to condition of vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert2" class= "button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img8.png)">
+                  <div class="inner">
+                    <p> Car Repair</p>
+                    <span>Mr. Raju </span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr. Raju<br>Experience: 8years <br> charges: For Full Maintanice - ₹1800 (base price) <br>rest according to condition of vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert3" class="button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img4.png)">
+                  <div class="inner">
+                    <p>Truck Repair</p>
+                    <span>Mr.Suraj & Mr.Mayank</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr.Suraj & Mr.Mayank<br>Experience: 12years <br> charges: For Full Maintanice - ₹4000 (base price) <br>Rest According to Condition of Vehical 
+                    </p>
+                    <br>
+                    <button id="alert4" class="button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img9.png)">
+                  <div class="inner">
+                    <p>Auto Repair</p>
+                    <span>Mr. Abhay</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr.Abhay<br>Experience: 2years <br> charges: For Full Maintanice - ₹800 (base price) <br>Rest According to Condition of Vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert5" class="button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img2.png)">
+                  <div class="inner">
+                    <p>Truck Repair</p>
+                    <span>Mr. Chintu & Golu</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr.Chintu & Mr.Golu<br>Experience: 9years <br> charges: For Full Maintanice - ₹3800 (base price) <br>Rest According to Condition of Vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert6" class="button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="container">
+                <div class="front" style="background-image: url(img3.png)">
+                  <div class="inner">
+                    <p>Bike Repair</p>
+                    <span>Mr.ShyamLal</span>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p class="para10">Name:Mr.ShyamLal<br>Experience: 7years <br> charges: For Full Maintanice - ₹700 (base price) <br>Rest According to Condition of Vehical 
+                    </p>
+                    <br>
+                    <br>
+                    <button id="alert7" class="button1"> Book Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <footer class="footer">
+            &copy; 2023 Your Portfolio | Designed by Team Autonix
+        </footer> -->
+        <!-- code for footer starts from here -->
+        <footer>
+          <div class="others">
+            <p>
+            <h2 style="color: whitesmoke;">Connect with Us:</p>
+            </h2>
+            <br>
+            <br>
+            <div class="icons">
+                
+                <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="insta-logo.png" alt="Instagram" width="30">
+                </a>
+                <a href="https://www.twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="twitter2-logo.webp" alt="Twitter" width="30">
+                </a>
+                <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img"
+                        src="facebook-logo.png"
+                        alt="Facebook" width="30">
+                </a>
+                <a href="https://www.youtube.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-img" src="youtube-logo.png" alt="Youtube" width="30">
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="address">
+                <p style="color: whitesmoke;"> our website and explore the latest in automobile parts technology.</p>
+            </div>
+        </div>
+        <div class="footer1">
+            <p class="footpara" style="color: whitesmoke;">Copyright &copy; Autonix ltd. All Rights Reserved | Gmail: autonix@gmail.com</p>
+            <br>
+        </div>
+        </footer>
+    <script>
+      // this is basic javascripts code for nested function to give alert one after another
+    var buttons = document.getElementsByClassName('button1');
+    function handleClick() {
+        // Display the first alert
+        alert('PLEASE WAIT UNTIL YOUR BOOKING IN PROCESS');
+
+        // Set a delay of 5 seconds (5000 milliseconds) before showing the next alert
+        setTimeout(function() {
+            alert('YOUR VEHICLE SERVICING SLOT IS SUCCESSFULLY BOOKED');
+        }, 3000);
+    }
+
+
+    //this is further js for navbar genral onclick functionality
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', handleClick);
+    }
+    sideNav = document.getElementById("sidenav");
+function openSesame() {
+
+    sideNav.classList.add("visible");
+}
+function closeSesame() {
+
+    sideNav.classList.remove("visible");
+}
+
+let scrollPos = window.pageYOffset;
+var ini = window.pageYOffset;
+var st = document.getElementById("sidenav").style.top;
+const header = document.getElementById("head");
+function lookCool() {
+    const currentScrollPos = window.pageYOffset;
+    if (scrollPos < currentScrollPos) {
+        header.style.opacity = "0";
+        document.getElementById("sidenav").style.position = "fixed";
+        document.getElementById("sidenav").style.top = "0";
+
+    }
+    else if (scrollPos == ini) {
+        header.style.opacity = "1";
+        document.getElementById("sidenav").style.top = st;
+    }
+    else {
+        header.style.opacity = "1";
+        document.getElementById("sidenav").style.top = st;
+    }
+    scrollPos = currentScrollPos;
+}
+</script>
+
+
+
+    
+        <script src="script.js"></script>
+          
+          
+    
+</body>
+</html>

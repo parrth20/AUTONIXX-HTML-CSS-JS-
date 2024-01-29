@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Coco Gothic', sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+.head {
+    text-align: center;
+    font-size: 60px;
+    color: #9ECA2E;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: #9ECA2E;
+}
+
+section {
+    padding: 20px;
+}
+
+#services {
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 22%); 
+    gap: 60px; 
+}
+
+.service-item {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(244, 244, 244);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgb(3, 254, 3);
+}
+
+.service-item:hover img {
+    transform: scale(1.2);
+}
+
+.head {
+    letter-spacing: 15px;
+}
+
+.head:hover {
+    letter-spacing: 30px;
+    transition: all 1s ease-in-out 0.5s;
+}
+
+.img2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .container {
+        padding: 20px; 
+    }
+}
+/* header file css */
+header{
+    background-color: black;
+    animation-name: appear;
+    animation-duration: 6s;
+    color: white;
+    width: 98%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin: 0px;
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+    font-family: CG;
+}
+
+#sidenav{
+    position: absolute;
+    line-height: 50px; background-color: #000; color: #fff; height: 100%; 
+    z-index: 2;
+    font-family: CG;
+    padding: 40px;
+    padding-bottom: 30px;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.6s;
+    left: 0;
+    visibility: hidden;
+}
+
+#autonix-logo{
+    letter-spacing: 10px; 
+    color: rgb(185, 238, 79); 
+    font-size: xx-large;
+    transition: all 1s ease-in-out .3s;
+}
+#autonix-logo:hover{
+    letter-spacing: 40px;
+    /* font-size: 40px; */
+}
+
+#sidenav.visible{
+    width: fit-content;
+    visibility: inherit;
+}
+@media (max-width: 721px) {
+    #autonix-logo{
+        display: none;
+    }
+}
+
+#sidenav a:hover{
+    color: #9ECA2E;
+    transition: 0.5s;
+}
+#sidenav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#cross:hover{
+    color: #9ECA2E;
+}
+#menu{
+    transition: 0.5s;
+}
+#menu:hover{
+    color:#9ECA2E;
+}
+
+
+
+
+
+
+/* footer css */
+footer{
+    background-color:#000000;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+  }
+
+
+h2 {
+    color: #00ff00; 
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.quick-links a:hover {
+    color: #00ff00; 
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #00ff00;
+}
+
+.address {
+    color: #888;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Classy Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    animation: fadeInUp 1s forwards; 
+    animation-delay: 0.5s; 
+    display: flex;
+    
+}
+
+.footer-img {
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+}
+
+
+.others {
+    opacity: 0;
+    animation: fadeInUp 1s forwards; 
+    animation-delay: 0.5s; 
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .animated {
+        opacity: 0;
+        animation: fadeInUp 1s forwards; 
+        animation-delay: 0.5s; 
+        display: block;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        margin-left:10px;
+    }
+}
+

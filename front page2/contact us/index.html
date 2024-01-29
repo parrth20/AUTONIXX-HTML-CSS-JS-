@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="gfg.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@500&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="sidenav">
+        <div style="width: 100%;display: flex; justify-content: space-between ; ">
+            <div style="position: relative; width: 100%; padding: 10px; font-size: 20px;">MENU</div>
+            <div id="cross" style="position: relative; width: 100%; text-align: right; padding: 10px; transition: 0.5s;"
+                onclick="closeSesame()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg></div><br>
+        </div>
+        <br>
+        <div class="menucont" style="padding: 30px;">
+            <a href="../index.html">Home</a><br>
+            <a href="../index.html">Services</a><br>
+            <a href="../contact us/index.html">Contact Us</a><br>
+            <a href="../about us/index.html" >About Us</a><br>
+            <a href="../other1/customerSupport.html" >Customer Support</a><br>
+            <a href="../Tnc/TERMS_CONDITIONS.HTML" >Terms and Conditions</a><br>
+            <a href="../other1/return&refund.html">Return and Refund Policy</a>
+        </div>
+    </div>
+    <header id="head" style="display: flex; justify-content: space-between; align-items: baseline; z-index: 1;">
+        <div id="menu" onclick="openSesame()" style="transition: 0.5s;"><span><svg xmlns="http://www.w3.org/2000/svg"
+                    width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 15 15">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></span><span> MENU</span></div>
+        <div id="autonix-logo">AUTONIX</div>
+        <div style="display: flex; justify-content: space-evenly;">
+            <span class="search" onclick="search()" style="padding-right:10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></span>
+            <span class="cart" style="padding-left: 10px; padding-right: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg></span>
+            <span class="contact" style="padding-left: 10px;">+ CONTACT US</span>
+        </div>
+    </header>
+        <h1 class="con">CONTACT US</h1> 
+    <main>
+        <div class="about1">
+             Welcome to the Autonix !! So glad that you're here.
+        </div>
+        <hr>
+        <div class="about2">
+            <h2> What is Autonix exactly ?</h2>
+            <br>
+            <br>
+            <p>"AutoNix: Your Trusted Mechanic" is a comprehensive website catering to automotive enthusiasts and vehicle owners seeking reliable mechanical services. With a user-friendly interface, AutoNix offers a seamless experience to explore a range of auto repair and maintenance services. From routine check-ups to complex repairs, our skilled mechanics ensure the optimal performance of your vehicle. The website provides easy appointment scheduling, transparent pricing, and expert advice on automotive care. Trust AutoNix to keep your vehicle running smoothly, ensuring a hassle-free and reliable driving experience.
+            </p>
+        </div>
+        <h1 class="team">TEAM AUTONIX</h1>
+
+        <div class="container-1">
+            <div class="flexbox1">
+                <img id="pic" src="assets/ajay.jpg" alt="Ajay Antil">
+                <h2 class="head1">CEO </h2>
+                <p class="1">Ajay Antil</p>
+               
+                <br>
+                <form action="https://www.linkedin.com/in/ajay-antil-b9998a251/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+            <div class="flexbox1">
+                <img id="pic" src="assets/sumit.jpg" alt="Sumit Sangale">
+                <h2 class="head1">Head Of Autonix</h2>
+                <p class="a"> Sumit Sangale</p>
+                <br>
+                <form action="https://www.linkedin.com/in/sumit-sangale-420bb4283/" method="get" target="_blank"><button
+                        class="button"><span>Connect </span></button></form>
+            </div>
+            <br>
+            <div class="flexbox1">
+                <img id="pic" src="assets/parth.jpg" alt="Parth Bandwal">
+                <h2 class="head1">Manager</h2>
+                <p class="a"> MR. Parth Bandwal</p>
+                <br>
+                <form action="https://www.linkedin.com/in/parth-bandwal-962675281/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="container-1">
+            <div class="flexbox1">
+                <img id="pic" src="assets/lakshya.jpg" alt="Lakshya Prajapati">
+                <h2 class="head1">Technical Head</h2>
+                <p class="a">Lakshya Prajapati</p>
+                <br>
+                <form action="https://www.linkedin.com/in/lakshya-prajapati-877b22289/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+            <div class="flexbox1">
+                <img id="pic" src="assets/anurag.jpg" alt="Anurag Yadav">
+                <h2 class="head1">Public Relations Head</h2>
+                <p class="a">Anurag Yadav</p>
+                <br>
+                <form action="https://www.linkedin.com/in/anurag-iiitl/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+            <div class="flexbox1">
+                <img id="pic" src="assets/img.jpg" alt="Sakshi Sahu ">
+                <h2 class="head1">Public Relations Head</h2>
+                <p class="a">Sakshi Sahu</p>
+                <br>
+                <form action="https://www.linkedin.com/in/sakshi-sahu-97425b287/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="container-1">
+            <div class="flexbox1">
+                <img id="pic" src="assets/img.jpg" alt="Arshiya">
+                <h2 class="head1">HR Manager</h2>
+                <p class="a">Arshia Adhya </p>
+                <br>
+                <form action="https://www.linkedin.com/in/arshia-adhya/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+            <br>
+            <div class="flexbox1">
+                <img id="pic" src="assets/img.jpg" alt="Radhika">
+                <h2 class="head1">Public Relations Head</h2>
+                <p class="a">Radhika</p>
+                <br>
+                <form action="https://www.linkedin.com/in/radhika-kalanee-322161247/" method="get" target="_blank">
+                    <button class="button"><span>Connect </span></button>
+                </form>
+            </div>
+           
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="others">
+          <p>
+          <h2>Connect with Us:</p>
+          </h2>
+          <div class="icons">
+              
+              <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-img" src="essentials/img/insta-logo.png" alt="Instagram" width="30">
+              </a>
+              <a href="https://www.twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-img" src="essentials/img/twitter2-logo.webp" alt="Twitter" width="30">
+              </a>
+              <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-img"
+                      src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png"
+                      alt="Facebook" width="30">
+              </a>
+              <a href="https://www.youtube.com/your_facebook" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-img" src="essentials/img/youtube-logo.png" alt="Youtube" width="30">
+              </a>
+          </div>
+          <div class="address">
+              <p>Visit our website and explore the latest in automobile parts technology.</p>
+          </div>
+      </div>
+      <div class="footer1">
+          <p class="footpara">Copyright &copy; Autonix ltd. All Rights Reserved | Gmail: autonix@gmail.com</p>
+          <br>
+      </div>
+    </footer>
+
+    <script>
+        sideNav = document.getElementById("sidenav");
+function openSesame() {
+
+    sideNav.classList.add("visible");
+}
+function closeSesame() {
+
+    sideNav.classList.remove("visible");
+}
+
+let scrollPos = window.pageYOffset;
+var ini = window.pageYOffset;
+var st = document.getElementById("sidenav").style.top;
+const header = document.getElementById("head");
+function lookCool() {
+    const currentScrollPos = window.pageYOffset;
+    if (scrollPos < currentScrollPos) {
+        header.style.opacity = "0";
+        document.getElementById("sidenav").style.position = "fixed";
+        document.getElementById("sidenav").style.top = "0";
+
+    }
+    else if (scrollPos == ini) {
+        header.style.opacity = "1";
+        document.getElementById("sidenav").style.top = st;
+    }
+    else {
+        header.style.opacity = "1";
+        document.getElementById("sidenav").style.top = st;
+    }
+    scrollPos = currentScrollPos;
+}
+    </script>
+</body>
+</html>

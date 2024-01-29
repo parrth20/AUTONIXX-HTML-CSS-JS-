@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonix - Return and Refund Policy</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @font-face {
+            font-family: RS;
+            src: url(https://cdn.jsdelivr.net/fontsource/fonts/racing-sans-one@latest/latin-400-normal.woff2);
+        }
+        @font-face {
+            font-family: CG;
+            src: url("https://fonts.cdnfonts.com/css/coco-gothic");
+        }
+        @import url('https://fonts.cdnfonts.com/css/racing-sans-one');
+
+        body{
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            font-family: Coco;
+            font-size: 18px;
+            background-image: linear-gradient(rgba(63,66,65,0.7),rgba(63,66,65,0.7)),url('TnCbg.jpeg');
+            background-repeat: no-repeat;   
+            background-size: cover;
+            background-blend-mode: 0.2;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container1 {
+            /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('https://t4.ftcdn.net/jpg/06/46/36/49/360_F_646364968_UQCmc5iGt4hZzZUB70f7uOrOfodXPXan.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: 0.2; */
+            margin:0;
+            padding: 20px;
+            height: 100%;
+            width: 90%;
+            box-shadow: #9ECA2E;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #9ECA2E;
+            font-size: 60px;
+            transition: .3s;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .container1 h2{
+            color: #9ECA2E;
+            font-size: 30px;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .head {
+            text-align: center;
+            font-size: 24px;
+            transition: .3s;
+        }
+
+        .head:hover {
+            letter-spacing: 8px;
+        }
+
+        h3 {
+            color: #9ECA2E;
+        }
+
+        .autonix {
+            font-size: 60px;
+            font-family: RS;
+            
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-size: 500px;
+            }
+
+            .autonix {
+                font-size: 30px;
+            }
+            
+        }
+        
+        @import url('https://fonts.cdnfonts.com/css/coco-gothic');
+        @font-face {
+            font-family: RS;
+            src: url(RacingSansOne-Regular.ttf);
+        }
+        @font-face {
+            font-family: CG;
+            src: url("https://fonts.cdnfonts.com/css/coco-gothic");
+        }
+        @keyframes sweepplace {
+            0%{letter-spacing: 0%;
+                height:100%;
+                top:50%;
+
+            /* transform: translate(-50%,-50%); */
+            }
+            50%{letter-spacing: 30px;
+                height:100%;
+                top:50%;
+
+            /* transform: translate(-50%,-50%); */
+            }
+            100%{
+                letter-spacing: 0px;
+                height:50%;
+                top:0;
+            }            
+        }
+        @keyframes appear {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity:0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+
+        header{
+            background-color: black;
+            position: sticky;
+            color: white;
+            width: 100%;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            margin: 0px;
+            opacity: 1;
+            top: 0;
+            transition: 0.3s;
+            font-family: CG;
+        }
+
+        #sidenav{
+            position: absolute; line-height: 50px; background-color: #000; color: #fff; height: 100%; 
+            z-index: 2;
+            font-family: CG;
+            padding: 40px;
+            padding-bottom: 30px;
+            width: 0;
+            overflow-x: hidden;
+            transition: width 0.6s;
+            left: 0;
+            visibility: hidden;
+        }
+
+        #sidenav.visible{
+            width: fit-content;
+            visibility: inherit;
+        }
+
+        #sidenav a:hover{
+            color: #9ECA2E;
+            transition: 0.5s;
+        }
+        #sidenav a{
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        #cross:hover{
+            color: #9ECA2E;
+        }
+        #menu{
+            transition: 0.5s;
+        }
+        #menu:hover{
+            color: #9ECA2E;
+        }
+
+        @font-face {
+            font-family: Coco ;
+            src: url('https://fonts.cdnfonts.com/css/coco-gothic');
+        } 
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #121212; /* Dark background color */
+            color: #fff; /* Light text color */
+            font-family: Coco;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #0a0a0a; /* Almost black background */
+            padding: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+
+        h2 {
+            color: #9ECA2E; /* Green heading color */
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .quick-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .quick-links a:hover {
+            color: #9ECA2E; /* Green color on hover */
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .social-icons a:hover {
+            color: #9ECA2E; /* Green color on hover */
+        }
+
+        .address {
+            color: #888;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        /* Classy Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+            animation-delay: 0.5s; /* Delay the animation */
+            display: flex;
+            flex-direction: row;    
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            justify-content: space-around;
+        }
+
+
+        .others {
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+            animation-delay: 0.5s; 
+        }
+
+/* Add more styling as needed */
+
+    @media screen and (max-width: 600px) {
+    /* Add responsive styles for smaller screens */
+        body {
+            margin: auto;
+        }
+        .animated {
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animation duration and fill-mode */
+            animation-delay: 0.5s; /* Delay the animation */
+            display: block;
+        }
+
+        .footer-section quick-links{
+            margin-bottom: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+   
+    <!-- Sidenav -->
+    <div id="sidenav">
+        <div style="width: 100%;display: flex; justify-content: space-between ; ">
+            <div style="position: relative; width: 100%; padding: 10px; font-size: 20px;" >MENU</div>
+            <div id="cross" style="position: relative; width: 100%; text-align: right; padding: 10px; transition: 0.5s;" onclick="closeSesame()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg></div><br>
+        </div>
+        <br>
+        <div class="menucont" style="padding: 30px;">
+            <a href="../index.html">Home</a><br>
+            <a href="../index.html">Services</a><br>
+            <a href="../contact us/index.html">Contact Us</a><br>
+            <a href="../about us/index.html" >About Us</a><br>
+            <a href="../other1/customerSupport.html" >Customer Support</a><br>
+            <a href="../Tnc/TERMS_CONDITIONS.HTML" >Terms and Conditions</a><br>
+            <a href="../other1/return&refund.html">Return and Refund Policy</a>
+        </div>
+    </div>
+
+    <!-- script for responsiveness -->
+
+    <script>
+        sideNav = document.getElementById("sidenav");
+        function openSesame(){
+
+            sideNav.classList.add("visible");
+        }
+        function closeSesame(){
+
+            sideNav.classList.remove("visible");
+        }
+    </script>
+    <!-- header for the html -->
+    <header id="head" style="display: flex; justify-content: space-between; align-items: baseline; z-index: 1;">
+        <div id="menu" onclick="openSesame()" style="transition: 0.5s;"><span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 15 15">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg></span><span> MENU</span></div>
+        <div class="autonix">Autonix</div>
+        <div style="display: flex; justify-content: space-evenly;">
+            <span class="search" onclick="search()" style="padding-right:10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></span>
+            <span class="cart" style="padding-left: 10px; padding-right: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg></span>
+            <span class="contact" style="padding-left: 10px;">+ CONTACT US</span>
+
+        </div>
+    </header>
+
+    
+
+    <!-- script for the header -->
+    <script>
+        let scrollPos = window.pageYOffset;
+        var ini = window.pageYOffset;
+        var st = document.getElementById("sidenav").style.top;
+        const header = document.getElementById("head");
+        function lookCool(){
+            const currentScrollPos = window.pageYOffset;
+            if (scrollPos < currentScrollPos){
+                header.style.opacity = "0";
+                document.getElementById("sidenav").style.position="fixed";
+                document.getElementById("sidenav").style.top="0";
+                
+            } 
+            else if (scrollPos == ini){
+                header.style.opacity = "1";
+                document.getElementById("sidenav").style.top=st;
+            }
+            else {
+                header.style.opacity = "1";
+                document.getElementById("sidenav").style.top=st;
+            }
+            scrollPos = currentScrollPos;
+        }
+        window.addEventListener("scroll", lookCool);
+        lookCool();
+
+
+    </script>
+
+    <br><br><br>
+    <div class="container1">
+        <div class="head" sty>
+           <h1>TERMS AND CONDITIONS</h1>
+        </div>
+        <h2>1. Acceptance of Terms</h2>
+By accessing and using the Autonix website (the "Website"), you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please refrain from using the Website.
+
+<h2>2. Product Information</h2>
+Autonix strives to provide accurate and up-to-date information about its products, including descriptions, prices, and availability. However, we do not guarantee the accuracy, completeness, or reliability of any information on the Website.
+
+<h2>3. Ordering and Payment</h2>
+3.1. To place an order, you must be at least 18 years old and have the legal capacity to enter into a contract.<br>
+
+3.2. By submitting an order, you agree to pay the total amount specified, including product prices, shipping fees, and taxes.<br>
+
+3.3. Autonix accepts various payment methods. Payment details are encrypted for security.<br>
+
+<h2>4. Shipping and Delivery</h2>
+4.1. Autonix aims to process and dispatch orders promptly, but delivery times may vary based on location and product availability.<br>
+
+4.2. Shipping costs are calculated during the checkout process and are the responsibility of the customer.<br>
+
+<h2>5. Returns and Refunds</h2>
+5.1. Autonix has a return and refund policy. Please refer to the dedicated <a href="#" style="color: #fff;">"Return and Refund Policy"</a> page for detailed information.<br>
+
+5.2. Customers are responsible for the return shipping costs unless the return is due to a mistake on Autonix's part.<br>
+
+<h2>6. Intellectual Property</h2>
+6.1. All content on the Autonix website, including images, text, logos, and graphics, is the property of Autonix and protected by applicable copyright and intellectual property laws.<br>
+
+6.2. Users may not reproduce, distribute, or use any content from the Website without prior written permission from Autonix.<br>
+
+<h2>7. Privacy Policy</h2>
+7.1. Autonix is committed to protecting user privacy. Our Privacy Policy outlines how we collect, use, and safeguard personal information. By using the Website, you agree to the terms of our Privacy Policy.
+
+<h2>8. Limitation of Liability</h2>
+8.1. Autonix is not liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the Website or its content.<br>
+
+8.2. Autonix does not guarantee that the Website will be error-free, secure, or continuously available.<br>
+
+<h2>9. Governing Law</h2>
+These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising from the use of the Website will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].
+
+<h2>10. Modification of Terms</h2>
+Autonix reserves the right to modify these Terms and Conditions at any time. Changes will be effective upon posting on the Website. Continued use of the Website constitutes acceptance of the modified terms.
+    </div>
+
+    <footer>
+        <div class="animated">
+         <div class="footer-section about">
+             <a href="#"><h2>About Us</h2></a>
+             <p>We are your trusted source for high-quality automobile parts.<br>
+                  Our commitment is to provide top-notch products to <br> enhance 
+                  your vehicle's performance and style.</p>
+         </div>
+ 
+         <div class="footer-section contact">
+             <a href="#"><h2>Contact Us</h2></a>
+             <p>Address: 1234 Auto Lane, Cityville, State, 12345</p>
+             <p>Phone: 9667899621 <br> 9825470173 <br> 9018394567</p>
+             <p>Email:autonix@autohub.com <br> info@autoparts.com <br> support@autonixautomotive.com</p>
+         </div>
+ 
+         <div class="footer-section quick-links">
+             <h2>Quick Links</h2>
+             <a href="#">Home</a>
+             <a href="#">Products</a>
+             <a href="#">Services</a>
+             <a href="#">Contact</a>
+         </div>
+         </div>
+         
+         <div class="others">
+         <p><h2>Connect with Us:</p></h2>
+         <div class="icons">
+         <!-- Add your social media icons and links here -->
+         <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+             <img src="images/insta-logo.png" alt="Instagram">
+         </a>
+         <a href="https://www.twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+             <img src="images/twitter2-logo.webp" alt="Twitter">
+         </a>
+         <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+             <img src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png" alt="Facebook">
+         </a>
+         <a href="https://www.youtube.com/your_facebook" target="_blank" rel="noopener noreferrer">
+             <img src="images/youtube-logo.png" alt="Facebook">
+         </a>
+         </div>
+         <div class="address">
+             <p>Visit our website and explore the latest in automobile parts technology.</p>
+         </div>
+         </div>
+    </footer>
+
+
+ 
+</body>
+
+</html>
